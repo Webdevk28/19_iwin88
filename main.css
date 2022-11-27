@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Dancing+Script:wght@500&family=Darker+Grotesque:wght@500&family=EB+Garamond&family=Montserrat:wght@500&family=Poppins&family=Quicksand:wght@500&family=Tinos&family=Zilla+Slab:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .head{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+} */
+.main{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+/* Search */
+.search-box:hover .search-txt {
+  width: 250px;
+  padding: 0 20px;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0px;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 12px;
+  width: 0;
+}
+
+.search-btn {
+  color: #1abc9c;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+  /* bosba-list */
+  .bosba {
+    --spacing: 25px;
+    --columns: 4;
+    margin-left: calc(-1 * var(--spacing));
+  }
+  .ream {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+  .ream-title {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+  /* bosba-list */
+  .footers {
+    --spacing: 25px;
+    --columns: 2;
+    margin-left: calc(-1 * var(--spacing));
+  }
+  .footer {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+  .footer-title {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+
+  /* 320-480 */
+  @media (min-width: 320px) and (max-width: 480px){
+    .head .logo-img{
+      margin: 0;
+    }
+    .head-search,
+    .head-menu{
+      display: none!important;
+    }
+    .close-button{
+      display: block!important;
+    }
+    /* top-banner */
+    .main .main-item{
+      padding: 12px;
+    }
+    .main .banner-text2{
+      padding: 0;
+    }
+    .main .video-img{
+      width: 100%;
+    }
+    .main .down-img{
+      width: 100%;
+    }
+    /* card */
+    .main .bosba{
+      --columns: 1;
+    }
+    /* casino */
+    .main .casino{
+      width: 100%;
+      padding: 5px;
+    }
+    .main .casino-img{
+      width: 100%;
+    }
+    /* chat */
+    .main .chat-item{
+      padding: 0px;
+    }
+    .main .khach-left{
+      width: 30%;
+      font-size: 70px;
+    }
+    .main .khach-right{
+      width: 70%;
+    }
+    /* footer */
+    .footer{
+      --columns: 1;
+    }
+  }
+  /* 481-767*/
+  @media (min-width: 481px) and (max-width: 767px){
+    .head .logo-img{
+      margin: 0;
+    }
+    .head-search,
+    .head-menu{
+      display: none!important;
+    }
+    .close-button{
+      display: block!important;
+    }
+    /* top-banner */
+    .main .main-item{
+      padding: 12px;
+    }
+    .main .banner-text2{
+      padding: 0;
+    }
+    .main .video-img{
+      width: 100%;
+    }
+
+    /* card */
+    .main .bosba{
+      --columns: 2;
+    }
+    /* casino */
+    .main .casino{
+      width: 100%;
+      padding: 5px;
+    }
+    .main .casino-img{
+      width: 100%;
+    }
+    /* chat */
+    .main .chat-item{
+      padding: 0px;
+    }
+    .main .khach-left{
+      width: 30%;
+      font-size: 70px;
+    }
+    .main .khach-right{
+      width: 70%;
+    }
+    /* footer */
+    .footer{
+      --columns: 1;
+    }
+  }
+  /* 768-1025 */
+  @media (min-width: 768px) and (max-width: 1025px){
+    .head .logo-img{
+      margin: 0;
+    }
+    .head-search,
+    .head-menu{
+      display: none!important;
+    }
+    .close-button{
+      display: block!important;
+    }
+    /* top-banner */
+    .main .main-item{
+      padding: 12px;
+    }
+    .main .banner-text2{
+      padding: 0;
+    }
+    .main .video-img{
+      width: 80%;
+    }
+
+    /* card */
+    .main .bosba{
+      --columns: 3;
+    }
+    /* casino */
+    .main .casino{
+      width: 100%;
+      padding: 5px;
+    }
+    .main .casino-img{
+      width: 80%;
+    }
+    /* chat */
+    .main .chat-item{
+      padding: 0px;
+    }
+    .main .khach-left{
+      width: 30%;
+      font-size: 70px;
+    }
+    .main .khach-right{
+      width: 70%;
+    }
+    /* footer */
+    .footer{
+      --columns: 2;
+    }
+  }
